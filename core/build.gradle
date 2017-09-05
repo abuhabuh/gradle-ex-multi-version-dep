@@ -1,0 +1,10 @@
+apply plugin: 'com.github.johnrengelman.shadow'
+
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.6.2'
+}
+
+shadowJar {
+	relocate 'com.google.gson', 'com.jwang.test.gson'
+}

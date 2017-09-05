@@ -1,0 +1,10 @@
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
+ 
+mainClassName = 'com.jwang.test.Main'
+
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile files('build/libs/core-all.jar')
+}
